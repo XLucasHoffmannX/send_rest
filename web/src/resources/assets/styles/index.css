@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('./form.css');
+
+:root {
+    --white: #fff;
+    --white-1: #f1f4f7;
+    --font-1: #515151;
+    --font-2: #787878;
+    --blue-1: #0085FF;
+    --grey-1: #E0E0E0
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+@keyframes animate-div {
+    from {
+        opacity: 0;
+        margin-top: -150px;
+    }
+
+    to {
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+
+@keyframes up {
+    from {
+        opacity: 0;
+        transform: translateY(2rem);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes down {
+    from {
+        opacity: 0;
+        transform: translateY(-1.2rem);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes left {
+    from {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+.App {
+    height: 100vh;
+    width: 100vw;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.ant-message-notice-content {
+    z-index: 9999 !important;
+}
+
+input {
+    outline: none;
+    border: 0;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+textarea:focus, input:focus, select:focus {
+    outline: 0 !important;
+}
+
+.layout_app {
+    height: 100vh !important;
+    width: 100vw !important;
+    overflow-y: auto;
+    background: var(--white-1) !important;
+}
+
+.layout_app.no_wrapper {
+    height: auto !important;
+    width: auto !important;
+    overflow: hidden;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.content_app {
+    width: 100%;
+    padding: 2rem;
+    overflow-y: auto;
+    animation: animate-div .5s;
+}
+
+.spin_app {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_app {
+    text-align: center;
+    font-weight: 600;
+    color: var(--font-2) !important;
+    background: var(--white-1) !important;
+}
+
+/* app */
+
+.app_access_button {
+    height: 60px;
+    width: min(100%, 450px) !important;
+    font-size: 18px;
+}
+
+.app_access_button.app_access_button_full {
+    width: 100% !important;
+}
+
+.landing_app_box_actions_share {
+    text-decoration: underline;
+    font-size: 16px;
+    margin-top: 1rem !important;
+}
+
+.landing_app_box_actions_share:hover {
+    text-decoration: underline;
+}
+
+.landing_app_box_actions {
+    display: flex;
+    flex-direction: column;
+}
+
+.landing_app_box_actions a {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.landing_app_box_actions a:last-child {
+    margin: 0;
+}
+
+.app_access_button_blank_blue {
+    color: #1677ff;
+    border: 1px solid #1677ff;
+}
+
+.alert {
+    border: 1px solid red;
+    position: absolute;
+    width: min(100%, 450px) !important;
+}
+
+.app_head_title {
+    font-weight: 400;
+    text-align: center;
+    color: var(--font-2);
+}
+
+.app_head_title h2 {
+    margin-top: 1rem;
+}
+
+.ant-upload-drag-icon {
+    font-size: 64px;
+    color: var(--blue-1);
+}
+
+.ant-upload-hint {
+    padding: 0 1rem !important;
+}
+
+.ant-upload-list-item-container {
+    margin-top: 1.5rem;
+}
+
+/* media queries */
+@media (max-width:700px) {
+    .app_head_title img {
+        width: 60%;
+    }
+
+    .app_head_title h2 {
+        font-size: calc(1vw + 1vh + .5vmin);
+    }
+
+    .app_access_button {
+        height: 55px;
+    }
+}

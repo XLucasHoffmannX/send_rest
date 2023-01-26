@@ -1,0 +1,58 @@
+.sharepublic_app {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+    width: 100%;
+}
+
+.sharepublic_app_box {
+    width: min(100%, 500px);
+    animation: animate-div .5s;
+}
+
+.sharepublic_app_box_drag{
+    margin: 2rem 0;
+}
+
+/* url share */
+.sharepublic_app_box_link_area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.sharepublic_app_box_link_area_input_group{
+    width: min(100%, 450px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.sharepublic_app_box_link_area_input_group input{
+    height: 55px;
+    color: var(--font-1);
+}
+
+.sharepublic_app_box_link_area_tool{
+    height: 55px;
+    width: 42px !important;
+    color: var(--font-1);
+}
+
+.sharepublic_app_box_qrcode_area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.alert_share{
+    border: 1px solid red;
+    width: min(100%, 450px);
+    margin-bottom: 2rem;
+}

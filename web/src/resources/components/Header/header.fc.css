@@ -1,0 +1,144 @@
+.header_app {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+    background: var(--white);
+    color: var(--font-1);
+    z-index: 100;
+}
+
+.header_app_split {
+    display: flex;
+    align-items: center;
+}
+
+.header_app_logo_area {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 1rem 0;
+}
+
+.header_app_logo_area .header_app_menu {
+    font-size: 24px;
+    margin-right: 1rem;
+    cursor: pointer;
+
+    display: none;
+}
+
+.header_app_logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 4rem;
+}
+
+.header_app_nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    display: flex;
+    align-items: center;
+}
+
+.header_app_nav a {
+    font-size: 18px;
+    color: var(--font-1);
+    font-weight: 700;
+    line-height: 20px;
+    font-style: normal;
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.header_app_nav a:last-child {
+    margin: 0 !important;
+}
+
+.header_app_nav a:hover {
+    border-bottom: 2px solid var(--font-1);
+}
+
+.header_app_search {
+    width: min(100%, 420px);
+    margin: 0 1rem;
+}
+
+.activeNav {
+    border-bottom: 2px solid var(--font-1);
+}
+
+.header_app_user{
+    cursor: pointer;
+}
+
+.header_app_user_pop{
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.header_app_user_ct{
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+}
+
+.header_app_user_ct a{
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+    font-size: 16px;
+}
+
+.header_app_user_ct a svg{
+    margin-right: .5rem;
+}
+
+
+/* media queries */
+@media (max-width:700px) {
+    .header_app_logo {
+        margin-right: 1.2rem;
+    }
+
+    .header_app_nav a {
+        font-size: 16px;
+        margin-right: 1rem;
+    }
+
+    .header_app_search {
+        margin-left: 1rem;
+    }
+}
+
+@media (max-width:600px) {
+    .header_app {
+        padding: 0 .5rem;
+    }
+
+    .header_app_logo {
+        margin-right: .5rem;
+    }
+
+    .header_app_nav {
+        display: none;
+    }
+
+    .header_app_logo_area .header_app_menu {
+        display: initial;
+    }
+}
+
+@media (max-width:600px) {
+    .header_app {
+        justify-content: space-around;
+    }
+
+    .header_app_logo {
+        display: none;
+    }
+}

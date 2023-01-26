@@ -1,0 +1,43 @@
+.sidebar_app {
+    width: 100%;
+    height: 100%;
+    background: var(--white-1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 1.5rem;
+}
+
+.sidebar_app_title{
+    margin-top: .5rem;
+}
+
+.sidebar_app_list{
+    width: 100%;
+}
+
+.sidebar_app_list_control{
+    margin-top: 2rem;
+    width: 100%;
+    height: 60px;
+}
+
+.sidebar_app_list_control a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--font-1);
+}
+
+.activeNavLink{
+    color: var(--white) !important;
+    background: var(--blue-1);
+    border-radius: 8px;
+    padding: .5rem;
+    text-align: center;
+}

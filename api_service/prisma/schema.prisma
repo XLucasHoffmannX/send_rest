@@ -1,0 +1,87 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Book {
+  id          String @id @default(uuid())
+  title       String
+  description String
+  bar_code    String @unique
+
+  @@map("books")
+}
+
+model User {
+  id             String @id @default(uuid())
+  name           String @unique
+  user_reference String
+  email          String @unique
+  password       String
+  role           Int    @default(0)
+  origin         String @default("")
+
+  ducuments Document[]
+  Spread    Spread[]
+
+  @@map("user")
+}
+
+model Archive {
+  id        String @id @default(uuid())
+  name      String
+  reference String
+  public    String
+  user_id   String @default("")
+
+  created_at DateTime @default(now())
+  upadted_at DateTime @updatedAt()
+
+  @@map("archives")
+}
+
+enum DocumentType {
+  MULTIPLE
+  PUBLIC
+  PRIVATE
+}
+
+model Document {
+  id String @id @default(uuid())
+
+  name      String
+  reference String
+  type      DocumentType @default(PUBLIC)
+
+  user_owner String
+
+  user_id String
+  User    User   @relation(fields: [user_id], references: [id], onDelete: Cascade)
+
+  created_at DateTime @default(now())
+
+  upadted_at DateTime @updatedAt
+  Spread     Spread[]
+
+  @@map("documents")
+}
+
+model Spread {
+  id String @id @default(uuid())
+
+  user_id String
+  User    User   @relation(fields: [user_id], references: [id])
+
+  document_id String
+  Document    Document @relation(fields: [document_id], references: [id], onDelete: Cascade)
+
+  created_at DateTime @default(now())
+
+  upadted_at DateTime @updatedAt
+
+  @@map("spreads")
+}

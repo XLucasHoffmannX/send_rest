@@ -1,0 +1,51 @@
+.expection_app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+    width: 100%;
+}
+
+.expection_app_box {
+    width: min(100%, 500px);
+    animation: animate-div .5s;
+}
+
+
+.expection_app_box_animation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.expection_app_box_animation_control{
+    width: 200px;
+}
+
+.expection_app_box_animation_control.error404{
+    width: 450px;
+}
+
+.expection_app_box_info{
+    text-align: center;
+    color: var(--font-1);
+    font-size: 28px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.expection_app_box_info span{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.expection_app_box_undo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,53 @@
+.upload_app {
+    display: flex;
+    justify-content: center;
+
+    height: 100%;
+    width: 100%;
+}
+
+.upload_app_box{
+    width: min(650px, 100%);
+}
+
+.sharepublic_app_box_drag {
+    margin-bottom: 2rem;
+}
+
+.upload_app_action {
+    border-radius: 6px;
+    border: 1px solid var(--grey-1);
+    padding: 1rem;
+    margin-bottom: 2rem;
+    background: var(--white);
+}
+
+.upload_form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.upload_app_switch {
+    width: 100%;
+    color: var(--font-1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 700;
+}
+
+.upload_options {
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.upload_app_submit {
+    animation: up .5s;
+}
+
+
+/* media queries */
+@media (max-width:700px) {
+   
+}

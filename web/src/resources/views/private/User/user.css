@@ -1,0 +1,34 @@
+.user_app_card_user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user_app_card {
+    width: min(100%, 450px) !important; 
+}
+
+.user_app_card img{ 
+    height: 190px !important;
+    margin-bottom: 1rem;
+}
+
+.user_app_reference{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.user_app_reference label{
+    width: min(100%, 450px) !important; 
+    margin-bottom: .5rem;
+    color: var(--font-1);
+    font-size: 16px;
+}
+
+.user_app_reference_input{
+    width: min(100%, 450px) !important; 
+    text-align: center;
+}
