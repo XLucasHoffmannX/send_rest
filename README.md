@@ -1,3 +1,4 @@
+# 💻 Envia ai! 
 <h1 align="center">
     <h4 align="center">Compartilhamento de arquivos de forma fácil e rápida</h4>
     <hr/>
@@ -16,7 +17,7 @@
 <b>Link design</b> https://www.figma.com/file/XPyclY1ZbECJ2VpiXrTzw6/envia-ai?node-id=0%3A1&t=UnlUd7G43munTPRZ-1
 
 ## 💻 Envia ai - refactor
-<p>Envia ai refatorado e mais completo, gerenciamento de permissões de arquivos e muito mais</p>p
+<p>Envia ai refatorado e mais completo, gerenciamento de permissões de arquivos e muito mais</p>
 
 
 ## 💻 Projeto inicial https://github.com/XLucasHoffmannX/envia-ai
