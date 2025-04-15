@@ -1,5 +1,4 @@
 <h1 align="center">
-    <img alt="Login-Page" title="Login-Page" src=".github/logo.png" width="200px" />
     <h4 align="center">Compartilhamento de arquivos de forma fácil e rápida</h4>
     <hr/>
     <p align="center">
@@ -11,9 +10,6 @@
 ## 💻 Projeto
 <b>envia ai</b> - compartilhar arquivos nunca ficou tão fácil
 <br />
-<h1 align="center">
-    <img alt="Login-Page" title="Login-Page" src=".github/frame.jpg" width="500px" />
-</h1>
 <b>Link para desenvolvimento</b> https://drive.google.com/file/d/1JN_mtCptfrwA9szhnpDb-tHAMRguV1LY/view?usp=sharing
 <br />
 <br />
@@ -21,3 +17,6 @@
 
 ## 💻 Envia ai - refactor
 <p>Envia ai refatorado e mais completo, gerenciamento de permissões de arquivos e muito mais</p>p
+
+
+## 💻 Projeto inicial https://github.com/XLucasHoffmannX/envia-ai
